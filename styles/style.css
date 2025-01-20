@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+/* shared styles */
+
+* {
+  padding: 0 5px;
+  margin: 0;
+}
+
+.display-flex {
+  display: flex;
+}
+
+/* Style for nav bar */
+
+.navbar {
+  padding: 15px 0;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8.25px;
+}
+
+.img-logo {
+  display: inline-block;
+}
+
+.nav-title {
+  margin-left: 7.5px;
+}
+
+.navbar .school-contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  flex-grow: 1;
+}
+
+.navbar .content {
+  list-style: none;
+}
+
+.navbar .content-link {
+  text-decoration: none;
+}
+
+.navbar .nav-btn {
+  width: auto;
+  max-width: 147px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 9px;
+  background: rgb(254, 163, 1);
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  border: none;
+}
+
+.navbar .content-link {
+  font-family: Quicksand;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.navbar .img-logo,
+.navbar .nav-title {
+  display: flex;
+  align-items: center;
+}
+
+.nav-title {
+  color: rgb(17, 17, 17);
+  font-family: Quicksand;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+#home {
+  color: rgb(254, 163, 1);
+}
+
+#about {
+  color: rgb(1, 172, 253);
+}
+
+#facilities {
+  color: rgb(5, 212, 223);
+}
+
+#admission {
+  color: rgb(93, 88, 239);
+}
+
+/* style for banner */
+
+.banner-items {
+  margin-top: 13.5px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item .banner-title {
+  max-width: 100%;
+  font-family: Quicksand;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.item .banner-desc {
+  max-width: 100%;
+  margin-top: 18px;
+  color: rgb(17, 17, 17);
+  font-family: Quicksand;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.banner-img {
+  max-width: 100%;
+  height: auto;
+  flex-shrink: 0;
+  order: 2;
+}
+
+.banner-btn {
+  width: auto;
+  max-width: 147px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 9px;
+  background: rgb(17, 17, 17);
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  border: none;
+}
+
+.banner-items .item {
+  order: 1;
+}
+
+@media (max-width: 768px) {
+  .banner-items {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .banner-img {
+    order: 1;
+  }
+
+  .banner-items .item {
+    order: 2;
+    text-align: center;
+  }
+
+  .banner-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .banner-desc {
+    text-align: center;
+  }
+
+  .banner-btn {
+    align-self: center;
+  }
+}
