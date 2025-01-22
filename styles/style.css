@@ -300,24 +300,130 @@ body {
 }
 
 .pre-back {
-  gap: 10px; 
+  gap: 10px;
   justify-content: center;
   align-items: center;
   padding: 10px 20px;
-  border-radius: 5px; 
+  border-radius: 5px;
 }
 
 .arrow {
   color: #fff;
-  font-size: 18px; 
-  font-weight: bold; 
-  background-color: rgb(254, 163, 1); 
+  font-size: 18px;
+  font-weight: bold;
+  background-color: rgb(254, 163, 1);
   padding: 5px 10px;
-  border-radius: 3px; 
+  border-radius: 3px;
   cursor: pointer;
 }
 
+/* style for stories */
 
+.stories {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.stories-title {
+  color: #333;
+  font-family: "Quicksand", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.stories-contents {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.stories-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 45%;
+}
+
+.stories-content:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.stories-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.stories-contents-title {
+  margin-bottom: 0.8rem;
+  color: rgb(0, 0, 0);
+  font-family: Quicksand;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 28.5px;
+}
+
+.stories-contents-desc {
+  color: rgb(102, 102, 102);
+  font-family: Raleway;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 21.5px;
+}
+
+.contents {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  width: 45%;
+}
+
+.contents div {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  padding: 1rem;
+  text-align: left;
+}
+
+.contents div:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.contents img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.content-title {
+  margin: 0;
+  text-align: left;
+  color: rgb(0, 0, 0);
+  font-family: Quicksand;
+  font-size: .9rem;
+  font-weight: 700;
+  line-height: 21.5px;
+}
 
 @media (max-width: 768px) {
   .banner-items {
