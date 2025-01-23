@@ -213,14 +213,6 @@ body {
   color: white;
 }
 
-.banner-items .banner-img {
-  order: 1;
-}
-
-.banner-items .item {
-  order: 2;
-}
-
 /* style for Standard Curriculum */
 
 .curriculum {
@@ -610,9 +602,12 @@ footer .content-link {
     padding: 0;
   }
 
+  /* Adjusting the order of banner in mobile view */
+
   .navbar {
     height: 47px;
     width: 100vw;
+    height: auto;
     border: 0.5px solid rgb(254, 163, 1);
     display: flex;
     justify-content: space-between;
@@ -646,7 +641,7 @@ footer .content-link {
     border-radius: 3px;
   }
 
-  /* Adjusting the order in mobile view */
+  /* Adjusting the order of banner in mobile view */
 
   .banner-items {
     display: flex;
@@ -658,27 +653,89 @@ footer .content-link {
 
   .banner-items .banner-img {
     order: 1;
-    width: 100%; 
-    max-width: 290px;
+    width: 100%;
+    max-width: 380px;
     height: auto;
     object-fit: contain;
     margin-bottom: 20px;
   }
 
+  .banner .banner-title {
+    font-size: 1.34rem;
+    font-weight: 700;
+    line-height: 1.67rem;
+  }
+
+  .banner .banner-desc {
+    font-size: .58rem;
+    font-weight: 500;
+    line-height: .75rem;
+  }
+
   .banner-items .item {
-    order: 2; 
-    max-width: 350px; 
-    width: 100%; 
+    order: 2;
+    max-width: 350px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
   }
 
   .banner-items .banner-title,
-  .banner-items .banner-desc
-   {
+  .banner-items .banner-desc {
     text-align: center;
     max-width: 100%;
+  }
+
+  .banner-btn {
+    width: auto;
+    max-width: 5.rem;
+    padding: 5px 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background: rgb(17, 17, 17);
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* Adjusting the order of curriculum in mobile view */
+  .curriculum .pre-back {
+    display: none;
+  }
+
+  .curriculum .curriculum-cntents {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .curriculum-cntent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 390px;
+    max-height: auto;
+  }
+
+  .curriculum-title {
+    color: rgb(0, 0, 0);
+    font-family: Quicksand;
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1.3rem;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 60px;
   }
 }
