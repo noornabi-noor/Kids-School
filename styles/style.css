@@ -16,16 +16,18 @@ body {
   background-image: url("../assets/bg.png");
 }
 
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #fce4ec; 
+  padding: 10px;
+  border-radius: 5px;
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-body {
-  margin: 0;
-  padding: 0;
-} */
 
 .hide {
   display: none;
@@ -132,7 +134,7 @@ body {
   color: rgb(93, 88, 239);
 }
 
-/* Added styles for the three-dot menu icon */
+
 .menu-icon {
   display: none;
   flex-direction: column;
@@ -352,114 +354,116 @@ body {
 
 /* style for stories */
 
-.stories {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 2rem;
-  background-color: #f9f9f9;
-}
-
-.stories-title {
-  color: #333;
-  font-family: "Quicksand", sans-serif;
-  font-size: 2.5rem;
-  font-weight: 700;
-  line-height: 3rem;
-  text-align: center;
-  margin-bottom: 2rem;
+.story-section{
+  background: url(image),
+  linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
 }
 
 .stories-contents {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 2rem;
-  width: 100%;
-  max-width: 1200px;
-}
-
-.stories-content {
-  display: flex;
-  flex-direction: column;
+  gap: 25px;
   align-items: center;
-  background: #fff;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  padding: 1.5rem;
-  width: 45%;
+  justify-content: center;
+  text-align: center;
 }
 
-.stories-content:hover {
-  transform: translateY(-10px);
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-.stories-content img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-  margin-bottom: 1rem;
-}
-
-.stories-contents-title {
-  margin-bottom: 0.8rem;
+.our-story {
+  margin-top: 15px;
   color: rgb(0, 0, 0);
   font-family: Quicksand;
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: 700;
-  line-height: 28.5px;
+  line-height: 3.5rem;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
-.stories-contents-desc {
+.story1 {
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 30px 0 rgba(19, 205, 6, 0.06);
+  margin-bottom: 20px;
+  background: rgb(255, 255, 255);
+}
+
+#experience-badge {
+  padding: 15px 10px;
+  font-size: 0.6rem;
+  font-weight: 500;
+  margin-left: 30px;
+  margin-top: -100px;
+}
+
+.btn-primary {
+  background: rgb(60, 216, 232);
+  color: white;
+  padding: 5px 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 35px;
+  border: none;
+}
+
+.btn-primary1 {
+  background: rgb(149, 178, 38);
+}
+
+#experience-year {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.featured-architect img {
+  width: 100%;
+}
+
+.story1-title {
+  /* max-width: 270px; */
+  width: 100vh;
+  height: auto;
+  margin-top: 3rem;
+  color: rgb(0, 0, 0);
+  font-family: Quicksand;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2rempx;
+  text-align: left;
+  margin-bottom: 3rem;
+}
+
+.story {
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 30px 0 rgba(19, 205, 6, 0.06);
+  margin-bottom: 20px;
+  background: rgb(255, 255, 255);
+}
+
+.story1-desc {
+  /* max-width: 290px; */
+  width: 100vh;
+  height: auto;
   color: rgb(102, 102, 102);
   font-family: Raleway;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
-  line-height: 21.5px;
-}
-
-.contents {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
-  width: 45%;
-}
-
-.contents div {
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  overflow: hidden;
-  padding: 1rem;
+  line-height: 1.5rem;
   text-align: left;
 }
 
-.contents div:hover {
-  transform: translateY(-10px);
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-.contents img {
-  width: 100%;
-  border-radius: 6px;
-  margin-bottom: 1rem;
-}
-
-.content-title {
-  margin: 0;
-  text-align: left;
+.story2-title {
   color: rgb(0, 0, 0);
   font-family: Quicksand;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 700;
-  line-height: 21.5px;
+  line-height: 1.5rem;
+  text-align: left;
 }
 
-.stories-btn {
-  margin-top: 3.75rem;
+.others-stroy {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
 }
 
 /* style for footer */
@@ -568,6 +572,16 @@ footer div {
   filter: brightness(1.2);
 }
 
+.story1:hover{
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+.story:hover{
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
 .keep {
   color: rgb(255, 255, 255);
   font-family: Quicksand;
@@ -667,9 +681,9 @@ footer .content-link {
   }
 
   .banner .banner-desc {
-    font-size: .58rem;
+    font-size: 0.58rem;
     font-weight: 500;
-    line-height: .75rem;
+    line-height: 0.75rem;
   }
 
   .banner-items .item {
@@ -690,7 +704,7 @@ footer .content-link {
 
   .banner-btn {
     width: auto;
-    max-width: 5.rem;
+    max-width: 5rem;
     padding: 5px 10px;
     margin-top: 20px;
     border-radius: 5px;
@@ -738,4 +752,104 @@ footer .content-link {
     text-align: center;
     margin-bottom: 60px;
   }
+
+  /* Adjusting the order of stories in mobile view */
+  .story1 {
+    display: none;
+  }
+
+  .others-stroy {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .story {
+    padding: 15px;
+    font-size: 0.9rem; 
+  }
+
+  .story2-title {
+    font-size: 0.9rem;
+    text-align: left; 
+  }
+
+  #experience-badge {
+    padding: 10px 5px;
+    font-size: 0.3rem;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-top: -100px;
+  }
+
+  .btn-primary {
+    font-size: 0.3rem; 
+    padding: 5px 8px;
+    border-radius: 20px;
+  }
+
+  .featured-architect img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* responsive for footer items */
+  .footer-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    gap: 1rem; 
+    text-align: left;
+  }
+
+  
+  .footer-school {
+    margin-left: 0; 
+    align-items: flex-start;
+    text-align: left; 
+  }
+
+  
+  .keep-us {
+    align-items: flex-start;
+    gap: 0.5rem; 
+    text-align: left; 
+  }
+
+  
+  .footer-img-tlte {
+    align-items: flex-start;
+    text-align: left;
+    gap: 1rem; 
+  }
+
+  
+  .img-logo1 {
+    max-width: 80px; 
+  }
+
+  .footer-title {
+    font-size: 2rem;
+  }
+
+  .footer-desc {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+
+  .about-school,
+  .keep {
+    font-size: 1.3rem;
+  }
+
+  .footer-school .content-link {
+    font-size: 0.9rem;
+  }
+
+  .keep-us img {
+    width: 28px;
+    height: 28px; 
+  }
+
 }
